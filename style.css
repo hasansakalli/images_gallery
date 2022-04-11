@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.879);
+}
+.container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.imgBig {
+  max-width: 55vw;
+  max-height: fit-content;
+  margin-bottom: -33px;
+ border-radius: 10px;
+}
+.imgBig:hover {
+
+  transition: all 500ms;
+}
+.imgSmall {
+  width: 5.4vw;
+  margin: -1px;
+  margin-top: -100px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  cursor: pointer;
+  transition: all 500ms;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.imgSmall:hover {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 500ms;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#left {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  color: rgba(255, 255, 255, 0.523);
+  font-size: 1.5em;
+  cursor: pointer;
+}
+#right {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  color: rgba(255, 255, 255, 0.523);
+  font-size: 1.5em;
+  cursor: pointer;
+}
+#right:hover{
+
+    color: white;
+    transition: all 200ms;
+}
+#left:hover{
+    color: white;
+    transition: all 200ms;
+}
+.transparent {
+  width: 55vw;
+  height: 41px;
+  bottom: 15%;
+  background-color: rgba(0, 0, 0, 0.388);
+  position: absolute;
+  transition: all 200ms;
+}
+p {
+  text-align: center;
+  color: white;
+  align-items: center;
+  margin-top: 8px;
+}
